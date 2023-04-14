@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFon2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:tint="#D00B1A6E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageWinSport"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:adjustViewBounds="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/winsport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_blue_transp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/training"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageWinSport" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAnalitic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_blue_transp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/analytics"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTraining" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_blue_transp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="Question"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAnalitic" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_blue_transp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/settings"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion" />
+
+    <TextView
+        android:id="@+id/textViewCeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/goal_for_the_day"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSettings" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCeli">
+        <TextView
+            android:id="@+id/textViewKol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:text="@string/_25000"
+            android:textAlignment="textEnd"
+            android:textColor="@color/orange"
+            android:textSize="32sp"
+            android:textStyle="italic|bold" />
+        <TextView
+            android:id="@+id/textViewPoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:text="@string/points"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="italic|bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lay1">
+
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:text="@string/progress"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textViewNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/orange"
+            android:textSize="32sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textViewP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.15"
+            android:text="@string/p"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="italic|bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:id="@+id/progressBarMenu"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/custom_progress_bar_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
